@@ -21,5 +21,3 @@ candidatoRouter.get('/candidato/:id', (req, res) => {
 })
 
 export default candidatoRouter
-
-

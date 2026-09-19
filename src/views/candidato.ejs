@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title><%= candidato.nome %></title>
+</head>
+<body>
+    <h1><%= candidato.nome %></h1>
+
+    <p>ID: <%= candidato.id %></p>
+    <p>Nome: <%= candidato.nome %></p>
+    <p>Número da urna: <%= candidato.numeroUrna %></p>
+    <p>Origem: <%= candidato.origem %></p>
+
+    <img src="<%= candidato.foto %>" alt="Foto de <%= candidato.nome %>">
+
+    <p>
+        <a href="/candidatos">Voltar para candidatos</a>
+    </p>
+</body>
+</html>

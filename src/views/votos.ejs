@@ -19,19 +19,17 @@
         <section>
             <h2>Votos</h2>
 
-            <% if (votos && voto.length> 0) { %>
+            <% if (votos && votos.length> 0) { %>
                 <ul>
-                    <% voto.forEach(candidato=> { %>
+                    <% votos.forEach(voto=> { %>
                         <li>
-                            <a href="/voto/<%= voto.candidatoId %>">
-                                <%= candidato.numeroUrna %>
-                            </a>
+                            Candidato ID: <%= voto.candidatoId %> - Votos: <%= voto.votos %>
                         </li>
                         <% }) %>
                 </ul>
                 <% } else { %>
-                    <p>Nenhum candidato encontrado.</p>
-                    <% } %>
+                    <p>Nenhum voto encontrado.</p>
+                <% } %>
         </section>
     </main>
 

@@ -12,7 +12,7 @@ candidatoViewRouter.get('/candidato/:id', (req, res) => {
     const candidato = candidatos.find(c => c.numeroUrna === numero)
     if (candidato) {
         res.status(200)
-        res.json(candidato)
+        res.render('candidato', {candidato})
     } else {
         res.status(404).json({ error: 'Candidato não encontrado' })
     }
